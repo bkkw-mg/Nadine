@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzabestellungsformular</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header> <!--Kopfbereich z.B. für header und nav-->
+        <div class="logo">
+            <img src="Da Angelo Logo.svg" width="400" alt="Logo Pizzeria Da Angelo">
+        </div>
+        <p class="intro">
+            <strong>Lieber Gast,</strong><br>
+            wir freuen uns, dass Sie uns auf unserer Website besuchen. <br>
+            Pizza und Pasta zum Abholen oder Liefern. Wählen Sie aus. <br>
+            <em>Wir wünschen Ihnen jetzt schon einen guten Appetit.</em>
+        </p>
+    </header>
+
+    <main>
+        <form> 
+            <fieldset class="pizzabestellung">
+                <legend>Pizzabestellung</legend>
+
+                <label for="abholung">Abholung</label> <!--bestimmt den Namen-->
+                <input type="radio" id="abholung" name="auswahl" value="abholung" required></input>
+                <label for="lieferung">Lieferung</label>
+                <input type="radio" id="lieferung" name="auswahl" value="lieferung" required><br>
+           
+
+                <label for="pizzaauswahl">Pizzaauswahl:</label> <!--label wird zuerst definiert-->
+                <select class="zwei-acht" name="pizza" size="1"><!--hier--> <!--size: Anzahl der Spalten-->
+                    <option value="p00">Bitte wählen</option>
+                    <option value="p01">Pizza Margherita</option>
+                    <option value="p02">Pizza Salami</option>
+                    <option value="p03">Pizza Tonno</option>
+                    <option value="p04">Pizza Quattro Formaggi</option>
+                    <option value="p05">Pizza Quattro Stagioni</option>
+                    <option value="p06">Pizza Frutti di Mare</option>
+                    <option value="p07">Pizza Napoli</option>
+                    </select>
+
+                <fieldset  class="zwei-acht">
+                    <legend>Sonderwünsche</legend>
+
+                <div class="check">
+                    <label for="extra scharf">extra scharf</label>
+                    <input type="checkbox" id="extra scharf" name="auswahl" value="extra scharf">
+
+                    <label for="extra viel kaese">extra viel Käse</label>
+                    <input type="checkbox" id="extra viel kaese" name="auswahl" value="extra viel kaese">
+                </div>
+                </fieldset>
+            </fieldset>
+            </div>
+
+
+
+            <fieldset class="kontaktdaten">
+                <legend>Kontaktdaten</legend>
+                <div class="kontakt">
+                    <label for="vorname">Vorname*</label>
+                        <div class="zwei-fuenf">
+                            <input type="text" id="vorname" name="kontakt" required>
+                        </div>
+                    
+                    <label for="nachname">Nachname*</label>
+                        <div class="fuenf-acht">
+                            <input type="text" id="nachname" name="kontakt" required>
+                        </div>
+
+                    <label for="strasse">Straße*</label>
+                        <div class="zwei-sieben">
+                            <input type="text" id="strasse" name="kontakt" required>
+                        </div>
+
+                    <label for="hausnummer">Hausnummer*</label>
+                    <div class="sieben-acht">
+                        <input type="text" id="hausnummer" name="kontakt" required>
+                    </div>
+
+                    <label for="pzl">PLZ*</label>
+                    <div class="zwei-vier">
+                        <input type="text" id="pzl" name="kontakt" required>
+                    </div>
+
+                    <label for="ort">Ort*</label>
+                    <div class="vier-acht">
+                        <input type="text" id="ort" name="kontakt" required>
+                    </div>
+
+                    <label for="e-mail">E-Mail*</label>
+                    <div class="zwei-acht">
+                        <input type="email" id="e-mail" name="kontakt" required>
+                    </div>
+
+                    <label for="bemerkung">Bemerkung</label>
+                    <div class="zwei-acht">
+                        <textarea rows="5"></textarea>
+                    </div>
+
+                    <label class="bestellen"></label>
+                    <div class="zwei-sechs">
+                        <button><strong>Bestellen</strong></button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+</html>

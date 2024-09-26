@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    background-color: rgba(211, 195, 182, 0.266);
+}
+body, select, button, input, textarea {
+      font-family: 'Montserrat';
+}
+
+fieldset.pizzabestellung{
+   background-color: white;
+}
+
+fieldset.kontaktdaten {
+    background-color: white;
+}
+
+fieldset.kontaktdaten legend, .pizzabestellung legend {
+    font-size: 18px;
+}
+
+fieldset.zwei-acht legend {
+    font-size: 16px;
+    /*Sonderwünsche, extra scharf und extra viel Käse wie linksbündig*/
+}
+
+form {
+    margin: 0 auto 0 auto;
+    max-width: 600px;
+}
+
+/*style*/
+.logo, .intro {
+    text-align: center;
+}
+
+.intro {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 2;
+}
+
+.check {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input, select, button, textarea, .kontaktdaten, .pizzabestellung {
+    border: 1px solid #999;
+    width: 100%;
+    font-size: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset input {
+    width: auto;
+    margin-bottom: 15px;
+}
+
+
+button {
+    background: #bbb;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #148839;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: calc(100% - 22px);
+    margin-bottom: 15px;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    border-radius: 5px;
+}
